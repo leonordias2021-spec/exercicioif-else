@@ -21,8 +21,8 @@ function draw() {
     circle(500, 100, 3);
     circle(120, 300, 3);
     circle(450, 330, 4);
-  
   }
+
   if (noite) {
     if (mouseIsPressed) {
       fill(255, 255, 200);
@@ -32,9 +32,11 @@ function draw() {
   } else {
     if (mouseIsPressed) {
       fill(255, 140, 0);
-      fill(255, 220, 50);       
+    } else {
+      fill(255, 220, 50);
     }
   }
+
   let tamanho;
   if (mouseY < height / 2) {
     tamanho = 60;
